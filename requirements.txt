@@ -1,0 +1,4 @@
+discord==1.7.3
+discord.py==1.7.3
+selenium==3.141.0
+pipenv==2021.5.29
