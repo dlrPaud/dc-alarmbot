@@ -23,6 +23,8 @@ from selenium.common.exceptions import *
 import discord
 from discord.ext import commands
 import asyncio
+
+import os
  
  
 EXCEPTIONS = (NoSuchElementException, ElementNotInteractableException, ElementClickInterceptedException)
@@ -171,7 +173,8 @@ def func2():
 
 
     client.loop.create_task(my_background_task())
-    client.run('ODU2OTQ1MzA3MTgxNzc2ODk3.YNIagg.LQoopctRi30aFrOyGSaBBKLbAPw')
+    access_token = os.environ["BOT_TOKEN"]
+    client.run('access_token')
 
 if __name__ == '__main__':
     Thread(target = func1).start()
